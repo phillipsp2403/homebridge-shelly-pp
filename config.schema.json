@@ -170,7 +170,29 @@
               }
             },
             "cover:0": {
-              "title": "Cover",
+              "title": "Cover 1",
+              "type": "object",
+              "properties": {
+                "exclude": {
+                  "title": "Exclude this cover",
+                  "type": "boolean",
+                  "default": false
+                },
+                "type": {
+                  "title": "Type",
+                  "description": "The type of accessory used to represent the cover. This setting apply only when the device is in cover mode.",
+                  "type": "string",
+                  "oneOf": [
+                    { "title": "Door", "enum": [ "door" ] },
+                    { "title": "Window", "enum": [ "window" ] },
+                    { "title": "Window Covering", "enum": [ "windowCovering" ] }
+                  ],
+                  "default": "window"
+                }
+              }
+            },
+            "cover:1": {
+              "title": "Cover 2",
               "type": "object",
               "properties": {
                 "exclude": {
@@ -227,7 +249,7 @@
         {
           "key": "devices[].switch:0",
           "condition": {
-            "functionBody": "return model.devices && !model.devices[arrayIndices[0]].exclude && model.devices[arrayIndices[0]].id && model.devices[arrayIndices[0]].id.match(/^\\s*(?:shellyplus1|shellyplus1pm|shellyplus2pm|shellyplusplug|shellyplusplugus|shellypro1|shellypro1pm|shellypro2|shellypro2pm|shellypro3|shellypro4pm)-/i) !== null"
+            "functionBody": "return model.devices && !model.devices[arrayIndices[0]].exclude && model.devices[arrayIndices[0]].id && model.devices[arrayIndices[0]].id.match(/^\\s*(?:shellyplus1|shellyplus1pm|shellyplus2pm|shellyplusplug|shellyplusplugus|shellypro1|shellypro1pm|shellypro2|shellypro2pm|shellypro3|shellypro4pm|shellypro2coverpm)-/i) !== null"
           },
           "items": [
             "devices[].switch:0.exclude",
@@ -237,7 +259,7 @@
         {
           "key": "devices[].switch:1",
           "condition": {
-            "functionBody": "return model.devices && !model.devices[arrayIndices[0]].exclude && model.devices[arrayIndices[0]].id && model.devices[arrayIndices[0]].id.match(/^\\s*(?:shellyplus2pm|shellypro2|shellypro2pm|shellypro3|shellypro4pm)-/i) !== null"
+            "functionBody": "return model.devices && !model.devices[arrayIndices[0]].exclude && model.devices[arrayIndices[0]].id && model.devices[arrayIndices[0]].id.match(/^\\s*(?:shellyplus2pm|shellypro2|shellypro2pm|shellypro3|shellypro4pm|shellypro2coverpm)-/i) !== null"
           },
           "items": [
             "devices[].switch:1.exclude",
@@ -247,7 +269,7 @@
         {
           "key": "devices[].switch:2",
           "condition": {
-            "functionBody": "return model.devices && !model.devices[arrayIndices[0]].exclude && model.devices[arrayIndices[0]].id && model.devices[arrayIndices[0]].id.match(/^\\s*(?:shellypro3|shellypro4pm)-/i) !== null"
+            "functionBody": "return model.devices && !model.devices[arrayIndices[0]].exclude && model.devices[arrayIndices[0]].id && model.devices[arrayIndices[0]].id.match(/^\\s*(?:shellypro3|shellypro4pm|shellypro2coverpm)-/i) !== null"
           },
           "items": [
             "devices[].switch:2.exclude",
@@ -257,7 +279,7 @@
         {
           "key": "devices[].switch:3",
           "condition": {
-            "functionBody": "return model.devices && !model.devices[arrayIndices[0]].exclude && model.devices[arrayIndices[0]].id && model.devices[arrayIndices[0]].id.match(/^\\s*(?:shellypro4pm)-/i) !== null"
+            "functionBody": "return model.devices && !model.devices[arrayIndices[0]].exclude && model.devices[arrayIndices[0]].id && model.devices[arrayIndices[0]].id.match(/^\\s*(?:shellypro4pm|shellypro2coverpm)-/i) !== null"
           },
           "items": [
             "devices[].switch:3.exclude",
@@ -267,11 +289,21 @@
         {
           "key": "devices[].cover:0",
           "condition": {
-            "functionBody": "return model.devices && !model.devices[arrayIndices[0]].exclude && model.devices[arrayIndices[0]].id && model.devices[arrayIndices[0]].id.match(/\\s*(?:shellyplus2pm|shellypro2pm)-/i) !== null"
+            "functionBody": "return model.devices && !model.devices[arrayIndices[0]].exclude && model.devices[arrayIndices[0]].id && model.devices[arrayIndices[0]].id.match(/\\s*(?:shellyplus2pm|shellypro2pm|shellypro2coverpm)-/i) !== null"
           },
           "items": [
             "devices[].cover:0.exclude",
             "devices[].cover:0.type"
+          ]
+        },
+        {
+          "key": "devices[].cover:1",
+          "condition": {
+            "functionBody": "return model.devices && !model.devices[arrayIndices[0]].exclude && model.devices[arrayIndices[0]].id && model.devices[arrayIndices[0]].id.match(/\\s*(?:shellypro2coverpm)-/i) !== null"
+          },
+          "items": [
+            "devices[].cover:1.exclude",
+            "devices[].cover:1.type"
           ]
         }
       ]
