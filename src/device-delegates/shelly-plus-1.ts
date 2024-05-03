@@ -3,7 +3,7 @@ import {
   ShellyPlus1Ul,
   ShellyPlus1Mini,
   ShellyPlus1MiniV3,
-} from "shellies-ds9";
+} from "shellies-pp";
 
 import { DeviceDelegate } from "./base";
 

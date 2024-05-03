@@ -1,12 +1,12 @@
-<a href="https://github.com/cubi1337/homebridge-shelly-ng"><img src="homebridge-shelly-ng.png" height="120"></a>
+<a href="https://github.com/phillipsp2403/homebridge-shelly-ng"><img src="homebridge-shelly-ng.png" height="120"></a>
 
-# homebridge-shelly-ds9
-[![npm-version](https://badgen.net/npm/v/homebridge-shelly-ds9)](https://www.npmjs.com/package/homebridge-shelly-ds9)
+# homebridge-shelly-pp
+[![npm-version](https://badgen.net/npm/v/homebridge-shelly-pp)](https://www.npmjs.com/package/homebridge-shelly-pp)
 
 [Homebridge](https://homebridge.io) plugin for [Shelly](https://shelly.cloud),
 enabling HomeKit support for the next generation of Shelly devices.This Package is only to pimp up the existing package [https://badgen.net/npm/v/homebridge-shelly-ng](https://badgen.net/npm/v/homebridge-shelly-ng). Because I'm lost if my Minis don't run in the Homebridge.
 
-<a href='https://ko-fi.com/cubi1337' target='_blank'><img height='35' style='border:0px;height:46px;' src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' />
+<a href='https://ko-fi.com/phillipsp2403' target='_blank'><img height='35' style='border:0px;height:46px;' src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' />
 
 
 For the first generation, see [homebridge-shelly](https://github.com/alexryd/homebridge-shelly).
@@ -35,13 +35,13 @@ Either install this plugin through [Homebridge Config UI X](https://github.com/o
 or manually by following these instructions:
 
 1. Install Homebridge by [following the instructions](https://github.com/homebridge/homebridge/wiki).
-2. Install this plugin by running `npm install -g homebridge-shelly-ds9`.
+2. Install this plugin by running `npm install -g homebridge-shelly-pp`.
 3. Add this plugin to the Homebridge config.json:
   ```
   "platforms": [
     {
-      "platform": "ShellyDS9",
-      "name": "Shelly DS9"
+      "platform": "ShellyPP",
+      "name": "Shelly PP"
     }
   ]
   ```

@@ -3,7 +3,7 @@ import {
   Cover,
   Switch,
   SwitchEnergyCounterAttributes,
-} from 'shellies-ds9';
+} from 'shellies-pp';
 
 import { Ability, ServiceClass } from './base';
 

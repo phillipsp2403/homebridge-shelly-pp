@@ -1,6 +1,6 @@
 import { PlatformConfig } from 'homebridge';
 
-import { DeviceId } from 'shellies-ds9';
+import { DeviceId } from 'shellies-pp';
 
 export interface MdnsOptions {
   /**

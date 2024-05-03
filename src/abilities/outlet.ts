@@ -1,5 +1,5 @@
 import { CharacteristicValue } from 'homebridge';
-import { CharacteristicValue as ShelliesCharacteristicValue, Switch } from 'shellies-ds9';
+import { CharacteristicValue as ShelliesCharacteristicValue, Switch } from 'shellies-pp';
 
 import { Ability, ServiceClass } from './base';
 

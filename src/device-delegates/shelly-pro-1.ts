@@ -2,7 +2,7 @@ import {
   ShellyPro1,
   ShellyPro1Rev1,
   ShellyPro1Rev2,
-} from 'shellies-ds9';
+} from 'shellies-pp';
 
 import { DeviceDelegate } from './base';
 
