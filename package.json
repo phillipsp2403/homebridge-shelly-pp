@@ -50,6 +50,6 @@
     "prettier": "^3.1.0"
   },
   "dependencies": {
-    "shellies-pp": "^1.0.5"
+    "shellies-pp": "^1.0.6"
   }
 }
