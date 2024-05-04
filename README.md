@@ -1,10 +1,10 @@
-<a href="https://github.com/phillipsp2403/homebridge-shelly-ng"><img src="homebridge-shelly-ng.png" height="120"></a>
+<a href="https://github.com/phillipsp2403/homebridge-shelly-pp"><img src="homebridge-shelly-pp.png" height="120"></a>
 
 # homebridge-shelly-pp
 [![npm-version](https://badgen.net/npm/v/homebridge-shelly-pp)](https://www.npmjs.com/package/homebridge-shelly-pp)
 
 [Homebridge](https://homebridge.io) plugin for [Shelly](https://shelly.cloud),
-enabling HomeKit support for the next generation of Shelly devices.This Package is only to pimp up the existing package [https://badgen.net/npm/v/homebridge-shelly-ng](https://badgen.net/npm/v/homebridge-shelly-ng). Because I'm lost if my Minis don't run in the Homebridge.
+enabling HomeKit support for the next generation of Shelly devices. This Package is based on the shelly-ds9 fork of the package [https://badgen.net/npm/v/homebridge-shelly-ng](https://badgen.net/npm/v/homebridge-shelly-ng). To add support for switches that I require.
 
 <a href='https://ko-fi.com/phillipsp2403' target='_blank'><img height='35' style='border:0px;height:46px;' src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' />
 

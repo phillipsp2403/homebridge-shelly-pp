@@ -9,7 +9,7 @@
         "title": "Name",
         "type": "string",
         "required": true,
-        "default": "Shelly NG"
+        "default": "Shelly PP"
       },
       "mdns": {
         "type": "object",
