@@ -221,8 +221,8 @@ export abstract class DeviceDelegate {
     const nameSuffix = o.single === true ? null : `Switch ${cover.id + 1}`;
  
     return this.createAccessory(
-      'id',
-      'nameSuffix',
+      id,
+      nameSuffix,
       new CoverAbility(cover, 'door').setActive(isDoor),
       new CoverAbility(cover, 'windowCovering').setActive(isWindowCovering),
       new CoverAbility(cover, 'window').setActive(!isDoor && !isWindowCovering),
