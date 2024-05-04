@@ -13,7 +13,7 @@ export class ShellyPlus2PmDelegate extends DeviceDelegate {
     const d = this.device as ShellyPlus2Pm;
     const isCover = d.profile === 'cover';
 
-    this.addCover(d.cover0, { active: isCover });
+    this.addCover(d.cover0, { active: isCover, single: true });
 
     this.addSwitch(d.switch0, { active: !isCover });
     this.addSwitch(d.switch1, { active: !isCover });

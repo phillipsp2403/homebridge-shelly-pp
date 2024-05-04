@@ -44,7 +44,10 @@ export interface AddCoverOptions {
    * Whether the accessory should be active.
    */
   active: boolean;
-}
+  /**
+   * Whether the device has a single cover.
+   */
+  single: boolean;}
 
 /**
  * A DeviceDelegate manages accessories for a device.
@@ -214,6 +217,9 @@ export abstract class DeviceDelegate {
     const isDoor = type === 'door';
     const isWindowCovering = type === 'windowcovering';
 
+    const id = o.single === true ? 'cover' : `cover-${cover.id}`;
+    const nameSuffix = o.single === true ? null : `Switch ${cover.id + 1}`;
+ 
     return this.createAccessory(
       'cover',
       'Cover',
