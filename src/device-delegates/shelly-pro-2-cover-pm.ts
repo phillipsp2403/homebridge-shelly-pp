@@ -8,7 +8,7 @@ import { DeviceDelegate } from './base';
 export class ShellyPro2CoverPmDelegate extends DeviceDelegate {
   protected setup() {
     const d = this.device as ShellyPro2CoverPm;
-    const isCover = d.profile === 'cover';
+    const isCover = true;
 
     this.addCover(d.cover0, { active: isCover });
     this.addCover(d.cover1, { active: isCover });
